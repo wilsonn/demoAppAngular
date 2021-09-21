@@ -1,0 +1,11 @@
+<h2>One-way Binding</h2>
+<p>Numero 1: </p><input type="number" (keyup)="recibirTecla($event)">
+<p>Numero 2: </p><input type="number" (keyup)="recibirTecla2($event)">
+<button (click)="operar()">Sumar</button>
+<p>El resultado es: {{rpta}} </p>
+
+<h2>Two way Binding</h2>
+<p>Numero 1: </p><input type="number" [(ngModel)]="num1">
+<p>Numero 2: </p><input type="number" [(ngModel)]="num2">
+<button (click)="operar()">Sumar</button>
+<p>El resultado es: {{rpta}} </p>
